@@ -19,4 +19,4 @@ async def on_message(message):
         target_channel = client.get_channel(529038351312093185)
         await target_channel.send(message.content)
 
-client.run(TOKEN)
+client.run(os.environ['TOKEN'])
