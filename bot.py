@@ -15,7 +15,7 @@ async def on_ready():
 
 @client.event
 async def on_message(message):
-    if message.channel.id == 734819118708162580:
+    if message.channel.id == 735165097021800571:
         target_channel = client.get_channel(529039796404879370)
         await target_channel.send(message.content)
 
