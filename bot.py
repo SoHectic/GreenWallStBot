@@ -20,4 +20,4 @@ async def on_message(message):
         await target_channel.send(message.content)
     else:
         await client.process_commands(message)
-client.run('NzM0ODAzMTcwNDYyNjYyNjc4.XxXAxw.8J_X12PalRgaBM8C3XA8LPkxhYg')
+client.run(os.environ['token'])
