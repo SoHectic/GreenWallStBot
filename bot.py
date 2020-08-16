@@ -15,8 +15,9 @@ async def on_ready():
 
 @client.event
 async def on_message(message):
-    if message.channel.id == client.get_channel(735165097021800571):
+    if message.channel.id == 735165097021800571:
         target_channel = client.get_channel(529039796404879370)
         await target_channel.send(message.content)
-
-client.run(os.environ['TOKEN'])
+    else:
+        await client.process_commands(message)
+client.run('NzM0ODAzMTcwNDYyNjYyNjc4.XxXAxw.8J_X12PalRgaBM8C3XA8LPkxhYg')
